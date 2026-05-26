@@ -1,0 +1,4 @@
+{"type":"user","message":{"role":"user","content":"Help me set up FastAPI with pydantic v2"},"timestamp":"2026-05-15T14:00:00Z","sessionId":"bbbb2222-0000-0000-0000-000000000002"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"FastAPI works great with pydantic v2. Install it with pip install fastapi pydantic."}]},"timestamp":"2026-05-15T14:00:10Z","sessionId":"bbbb2222-0000-0000-0000-000000000002"}
+{"type":"user","message":{"role":"user","content":"How do I add request validation?"},"timestamp":"2026-05-15T14:01:00Z","sessionId":"bbbb2222-0000-0000-0000-000000000002"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Define a BaseModel and use it as a parameter annotation."}]},"timestamp":"2026-05-15T14:01:20Z","sessionId":"bbbb2222-0000-0000-0000-000000000002"}

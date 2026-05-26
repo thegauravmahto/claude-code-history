@@ -1,0 +1,5 @@
+{"type":"permission-mode","permissionMode":"default","sessionId":"aaaa1111-0000-0000-0000-000000000001"}
+{"type":"user","message":{"role":"user","content":"I want to build a real-time voice agent using the Gemini Live API for telephony"},"timestamp":"2026-05-10T09:00:00Z","sessionId":"aaaa1111-0000-0000-0000-000000000001"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Great. The Gemini Live API supports native VAD. For telephony you'll want a Twilio bridge."}]},"timestamp":"2026-05-10T09:00:15Z","sessionId":"aaaa1111-0000-0000-0000-000000000001"}
+{"type":"user","message":{"role":"user","content":"What about Indian DLT compliance for outbound calls?"},"timestamp":"2026-05-10T09:01:00Z","sessionId":"aaaa1111-0000-0000-0000-000000000001"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"You'll need DLT registration with one of the indian telecom providers before outbound."}]},"timestamp":"2026-05-10T09:01:30Z","sessionId":"aaaa1111-0000-0000-0000-000000000001"}
