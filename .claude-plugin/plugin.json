@@ -3,5 +3,5 @@
   "description": "Search and resume your Claude Code session history from inside any session",
   "version": "0.1.0",
   "author": { "name": "Gaurav Dhir" },
-  "homepage": "https://github.com/gauravdhir/cc-history"
+  "homepage": "https://github.com/thegauravmahto/claude-code-history"
 }

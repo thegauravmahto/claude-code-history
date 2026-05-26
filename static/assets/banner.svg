@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="cc-history — Search your Claude Code session history">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1F1B16"/>
+      <stop offset="100%" stop-color="#2A231C"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#E89072"/>
+      <stop offset="100%" stop-color="#CC785C"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#F5F0E8"/>
+      <stop offset="100%" stop-color="#EFE8DC"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="14" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- coral glow -->
+  <circle cx="980" cy="180" r="180" fill="url(#coral)" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="220" cy="80"  r="120" fill="url(#coral)" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- terminal mock card -->
+  <g transform="translate(720,70)">
+    <rect width="430" height="220" rx="14" fill="#0F0C09" stroke="#3A322A" stroke-width="1"/>
+    <circle cx="22" cy="22" r="6" fill="#FF5F56"/>
+    <circle cx="42" cy="22" r="6" fill="#FFBD2E"/>
+    <circle cx="62" cy="22" r="6" fill="#27C93F"/>
+    <text x="20" y="68" font-family="ui-monospace, 'SF Mono', monospace" font-size="13" fill="#E89072">$ /history gemini live</text>
+    <text x="20" y="100" font-family="ui-monospace, 'SF Mono', monospace" font-size="12" fill="#F5F0E8">1. Outbound calling PoC: Gemini Live + Twilio</text>
+    <text x="20" y="120" font-family="ui-monospace, 'SF Mono', monospace" font-size="11" fill="#9A8F80">   May 12 · voice-AI · telephony</text>
+    <text x="20" y="148" font-family="ui-monospace, 'SF Mono', monospace" font-size="12" fill="#F5F0E8">2. VAD comparison: Live API vs Silero</text>
+    <text x="20" y="168" font-family="ui-monospace, 'SF Mono', monospace" font-size="11" fill="#9A8F80">   Apr 28 · benchmarking · voice-AI</text>
+    <text x="20" y="196" font-family="ui-monospace, 'SF Mono', monospace" font-size="12" fill="#9A8F80">› resume #1</text>
+  </g>
+
+  <!-- left side: logo + tagline -->
+  <g transform="translate(60,110)">
+    <text x="0" y="0" font-family="'Tiempos Headline', Georgia, serif" font-weight="500" font-size="68" fill="#F5F0E8" letter-spacing="-1.5">cc-history</text>
+    <text x="0" y="58" font-family="-apple-system, 'Inter', sans-serif" font-weight="400" font-size="22" fill="#E89072">Search your Claude Code session history</text>
+    <text x="0" y="100" font-family="-apple-system, 'Inter', sans-serif" font-weight="400" font-size="16" fill="#9A8F80">An open-source MCP plugin · SQLite FTS5 · AI-generated titles</text>
+
+    <g transform="translate(0,130)">
+      <rect x="0" y="0" width="86" height="26" rx="13" fill="none" stroke="url(#coral)" stroke-width="1.5"/>
+      <text x="43" y="18" text-anchor="middle" font-family="-apple-system, 'Inter', sans-serif" font-size="12" fill="#E89072" font-weight="600">Python</text>
+      <rect x="96" y="0" width="76" height="26" rx="13" fill="none" stroke="#3A322A" stroke-width="1"/>
+      <text x="134" y="18" text-anchor="middle" font-family="-apple-system, 'Inter', sans-serif" font-size="12" fill="#9A8F80" font-weight="600">MCP</text>
+      <rect x="182" y="0" width="90" height="26" rx="13" fill="none" stroke="#3A322A" stroke-width="1"/>
+      <text x="227" y="18" text-anchor="middle" font-family="-apple-system, 'Inter', sans-serif" font-size="12" fill="#9A8F80" font-weight="600">SQLite FTS5</text>
+      <rect x="282" y="0" width="60" height="26" rx="13" fill="none" stroke="#3A322A" stroke-width="1"/>
+      <text x="312" y="18" text-anchor="middle" font-family="-apple-system, 'Inter', sans-serif" font-size="12" fill="#9A8F80" font-weight="600">MIT</text>
+    </g>
+  </g>
+</svg>
