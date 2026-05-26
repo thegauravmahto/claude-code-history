@@ -29,7 +29,7 @@ def test_upsert_then_lookup(tmp_db_path: Path):
     )
     upsert_session(conn, s)
     row = conn.execute("SELECT id, file_mtime, turn_count FROM sessions WHERE id=?", ("abc-1",)).fetchone()
-    assert row == ("abc-1", 10.0, 2)
+    assert tuple(row) == ("abc-1", 10.0, 2)
 
 
 def test_upsert_updates_existing(tmp_db_path: Path):
@@ -41,7 +41,7 @@ def test_upsert_updates_existing(tmp_db_path: Path):
     s.turn_count = 5
     upsert_session(conn, s)
     row = conn.execute("SELECT file_mtime, turn_count FROM sessions WHERE id=?", ("abc-1",)).fetchone()
-    assert row == (20.0, 5)
+    assert tuple(row) == (20.0, 5)
 
 
 def test_replace_turns_populates_fts(tmp_db_path: Path):
