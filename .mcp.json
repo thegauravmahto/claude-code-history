@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cc-history": {
+      "command": "uvx",
+      "args": ["cc-history-mcp"],
+      "env": {
+        "CC_HISTORY_DB": "${CLAUDE_PLUGIN_DATA}/index.db",
+        "CC_HISTORY_SESSIONS_DIR": "~/.claude/projects",
+        "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+      }
+    }
+  }
+}
