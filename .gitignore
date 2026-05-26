@@ -1,0 +1,28 @@
+# Brainstorming artifacts (visual companion)
+.superpowers/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env / secrets
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
