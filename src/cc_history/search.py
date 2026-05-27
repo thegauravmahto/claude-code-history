@@ -13,8 +13,11 @@ from cc_history.jsonl_parser import parse_session_file
 from cc_history.models import SearchHit, Session, Turn
 
 
-# FTS5 reserves these characters; we strip them when accepting prose
-_FTS_RESERVED = re.compile(r'[":\(\)\*\^]')
+# FTS5 reserves these characters; we strip them when accepting prose.
+# `-` is a NOT operator in FTS5, so a bare query like "cc-history plugin" parses
+# as "cc NOT history plugin". Replace it with whitespace so hyphenated terms
+# become two AND/OR-able tokens.
+_FTS_RESERVED = re.compile(r'[":\(\)\*\^\-]')
 
 
 def _to_fts_query(raw: str) -> str:
